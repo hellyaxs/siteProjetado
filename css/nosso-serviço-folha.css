@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Josefin Sans,sans-serif;
+    outline: none;
+}
+section{
+
+    width: 100%;
+    text-align: center;
+
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: rgb(43, 10, 233);
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    display:none;
+}
+@media(max-width:800px){
+    label[for="bt_menu"]{
+        display:block;
+    }
+    .menu nav{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        height: fit-content;
+        background-color: darkblue;
+        transition: all 0.4s;
+    }
+    #bt_menu:checked ~ ul li{
+        display:list-item;
+        margin-bottom: 20px;
+
+    }
+    .menu a{
+        background-color: darkblue;
+        display: block;
+        padding: 20px;
+        height: auto;
+        z-index: 1;
+       
+    }
+    
+    #bt_menu:checked ~
+section#menu{
+    margin-left: -100%;
+    transition: all 0.4s;;
+    position: fixed;
+   
+
+ }
+ .menu section{
+    transition: all 0.4s;;
+     margin:0;
+     height: 250px;
+    
+ }
+ .menu img[alt="logo-do-site"]{
+       display: none;
+ }
+}
+nav{
+    
+    margin-top: 10px;
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+}
+ul li{
+    display:inline-flex;
+    flex-wrap: wrap;
+    color: azure;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+}
+a{
+    padding: 14px;
+    text-decoration: none;
+    color: azure;
+}
+a :hover{
+    color: rgb(251, 54, 64);
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    color: rgb(67, 54, 251);
+    font-size: 3.7em;
+    text-align: center;
+
+}
+.servi{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+    padding: 50px;
+    justify-content:center;
+}
+h2
+{
+    font-size: 2.3em;
+    color: cornflowerblue;
+}
+.servi div{
+
+    width: 380px;
+    height: auto;
+    background-color: rgba(0, 4, 238, 0.024);
+    padding:30px;
+    margin:20px ;
+    
+}
+img#agende-ja {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+section#contato{
+    align-items: center;
+    max-width: 100%;
+    flex-direction: row;
+    align-content: center;
+}
+.contato p,address {
+    width: 98%;
+    padding: 5px;
+    margin-left: 5px;
+    display: block;
+    color:rgb(30, 27, 221);
+    text-align: center;
+}
+
+ul.social{
+    display: flex;
+    margin-left: 43%; 
+}
+
+button
+{
+     padding: 10px;
+     padding-left: 65px;
+     padding-right: 65px;  
+     background-color: rgb(30, 27, 221);
+     color: floralwhite;
+     margin-top:10px;
+     margin-bottom: 15px;
+}
+
+footer{
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    
+}
