@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Josefin Sans",sans-serif;
+    outline: none;
+}
+section{
+
+    width: 100%;
+    text-align: center;
+
+}
+input[type="checkbox"]{
+    display:none;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: rgb(43, 10, 233);
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    display:none;
+}
+@media(max-width:800px){
+    label[for="bt_menu"]{
+        display:block;
+    }
+    .menu nav{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        height: fit-content;
+        background-color: darkblue;
+        transition: all 0.4s;
+    }
+    #bt_menu:checked ~ ul li{
+        display:list-item;
+
+    }
+    .menu a{
+        background-color: darkblue;
+        display: block;
+        padding: 20px;
+        height: auto;
+        z-index: 1;
+    }
+    
+    #bt_menu:checked ~
+section#menu{
+    margin-left: -100%;
+    transition: all 0.4s;;
+    position: fixed;
+   
+
+ }
+ .menu section{
+    transition: all 0.4s;;
+     margin:0;
+     height: 250px;
+    
+ }
+ .menu img[alt="logo-do-site"]{
+       display: none;
+ }
+}
+nav{
+    
+    margin-top: 10px;
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+ul li{
+    display:inline-flex;
+    flex-wrap: wrap;
+    color: azure;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+}
+a{
+    padding: 14px;
+    text-decoration: none;
+    color: azure;
+    
+}
+a :hover{
+    color: rgb(251, 54, 64);
+}
+h1{
+    margin-top: 40px;
+    align-items: center;
+    color: rgb(251, 54, 64);
+    font-size: 3.7em;
+    text-align: center;
+
+}
+
+address#eventos, h2{
+    color: black;
+    text-align: center;
+}
+p{
+    
+    font-size: 1.3em;
+    text-shadow: 1px 1px 35px rgba(38, 85, 240, 0.562) ;
+    margin: 30px;
+    text-align: center;
+
+}
+section#Conheça{
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 10px;
+}
+input[type="button"]{
+     outline:none;
+     padding: 11px;
+     padding-left: 30px;
+     padding-right: 30px;
+     border-radius: 20px;
+     background-color: rgb(251, 54, 64);
+     color: floralwhite;
+     margin-left: 150px;
+     margin-bottom: 10px;
+
+
+}
+input[type="button"]:hover{
+    background-color:rgba(38, 85, 240, 0.562) ;
+}
+div.sobre{
+   
+    width: 100%;
+    display: inline-flex;
+}
+.teste>div{
+    flex: 1 1 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33.25%;
+    min-width: 300px;
+    height: auto;
+    border-right: solid black 1px;
+}
+.teste>div>h3>img{
+    
+    height: 70px;
+    width: 70px;
+}
+.teste{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(../banco-de-imagem/clips-index.jpg);
+    padding: 20px 0px 20px  ;
+}
+.teste>div>p{
+    text-align: justify;
+    min-width: 300px;
+}
+
+@media(max-width:800px){
+    div.sobre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.sobre_img{
+    height: 350px;
+    overflow: hidden;
+    display: inline-flexbox;
+    width: 200%;
+}
+.sobre p{
+    text-align: justify;
+}
+aside{
+    color: blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 170px;
+    background-color:rgba(206, 245, 253, 0.877);
+
+}
+br#sitaçao{
+    display: block;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+section.eventos {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+    height: auto;
+    
+}
+.eventos > div{
+     flex: 1 1 150px;
+     flex-wrap: wrap;
+     text-align: center;
+     height: 340px;
+     margin: 10px;
+     padding: 5px 25px 30px 25px;
+     
+    
+}
+
+p.ventos{
+    display:block;
+    text-align: justify;
+    font-size: 1em;
+}
+.eventos input[type="button"]{
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    background-color: blue;
+    
+}
+input[type="button"]:hover{
+    background-color:rgb(251, 54, 64) ;
+    color:blue ;
+    cursor: pointer;
+    outline:none;
+}
+section#contato{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1050px;
+    flex-direction: row;
+    align-content: center;
+
+}
+.contato p,address {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: block;
+    color:rgb(30, 27, 221);
+    text-align: left;
+}
+
+ul.social{
+    display: flex;
+    margin-left: 10px; 
+}
+
+div.formulario{
+    display:flex;
+    align-items: center; 
+    width: 43.5%;
+}
+@media(max-width:800px){
+    div.formulario{
+        width: 100%;
+    }
+}
+button
+{
+     padding: 10px;
+     padding-left: 170px;
+     padding-right: 170px;  
+     background-color: rgb(30, 27, 221);
+     color: floralwhite;
+     margin-top:30px;
+     cursor: pointer;
+     
+}
+
+footer{
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    
+}

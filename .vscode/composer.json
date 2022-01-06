@@ -1,0 +1,13 @@
+{
+    "name": "erf/composer-php",
+    "description": "escola reino infantil",
+    "authors": [
+        {
+            "name": "Elias Vitor",
+            "email": "eliasvito58@gmail.com"
+        }
+    ],
+    "require-dev": {
+         "dompdf/dompdf":"0.8.5"
+    }
+}

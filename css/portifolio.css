@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Josefin Sans,sans-serif;
+    outline: none;
+}
+section{
+
+    width: 100%;
+    text-align: center;
+
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: rgb(43, 10, 233);
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    display:none;
+}
+@media(max-width:800px){
+    label[for="bt_menu"]{
+        display:block;
+    }
+    .menu nav{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        height: fit-content;
+        background-color: darkblue;
+        transition: all 0.4s;
+    }
+    #bt_menu:checked ~ ul li{
+        display:list-item;
+        margin-bottom: 20px;
+
+    }
+    .menu a{
+        background-color: darkblue;
+        display: block;
+        padding: 20px;
+        height: auto;
+        z-index: 1;
+       
+    }
+    
+    #bt_menu:checked ~
+section#menu{
+    margin-left: -100%;
+    transition: all 0.4s;;
+    position: fixed;
+   
+
+ }
+ .menu section{
+    transition: all 0.4s;;
+     margin:0;
+     height: 250px;
+    
+ }
+ .menu img[alt="logo-do-site"]{
+       display: none;
+ }
+}
+nav{
+    
+    margin-top: 10px;
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+}
+ul li{
+    display:inline-flex;
+    flex-wrap: wrap;
+    color: azure;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
+}
+a{
+    padding: 14px;
+    text-decoration: none;
+    color: azure;
+}
+a :hover{
+    color: rgb(251, 54, 64);
+}
+h1{
+    margin-top: 20px;
+    align-items: center;
+    color: rgb(251, 54, 64);
+    font-size: 3.7em;
+    text-align: center;
+
+}
+section#galeria{
+    width: 100%;
+    height: 600px;
+    position:static;
+
+}
+.gallery {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+    max-height: 33vw;
+    overflow: hidden;
+  }
+  
+  .gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gallery__item {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
+  .gallery__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  .gallery__item:nth-child(5) {
+    left: 100%;
+    z-index: 1;
+    transform: translateX(-50%) scale(.8);
+  }
+  .gallery__item:nth-child(6) {
+    left: 100%;
+    z-index: 1;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(n+7) {
+    left: 100%;
+    z-index: 0;
+    transform: scale(.8);
+  }
+  .bg-1 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/01.jpg);
+  }
+  
+  .bg-2 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/02.jpg);
+  }
+  
+  .bg-3 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/03.jpg);
+  }
+  
+  .bg-4 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/04.jpg);
+  }
+  
+  .bg-5 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/05.jpg);
+  }
+  
+  .bg-6 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/06.jpg);
+  }
+  
+  .bg-7 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/07.jpg);
+  }
+  .bg-8 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/08.jpg);
+  }
+  .bg-9 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/09.jpg);
+  }
+  .bg-10 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/10.jpg);
+  }
+  .bg-11 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/11.jpg);
+  }
+  .bg-12 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/12.jpg);
+  }
+  .bg-13 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/13.jpg);
+  }
+  .bg-14 {
+    background-image: url(../banco-de-imagem/imagens\ da\ escola/14.jpg);
+  }
+  .gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+  background:  linear-gradient(to right, rgb(25, 10, 231) 0%, rgba(0,0,0,0) 10%);
+}
+
+.gallery:after {
+  right: 0;
+  background:  linear-gradient(to left, rgb(25, 10, 231) 0%, rgba(0,0,0,0) 10%);
+}
+footer{
+    background-color: rgb(30, 27, 221);
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    
+}
