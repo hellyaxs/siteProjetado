@@ -9,7 +9,7 @@ public function conectar(){
   global $pdo;
    try
     {
-     $pdo =new PDO("mysql:dbname=escolainfantilbd;host=localhost","root","");
+     $pdo = new PDO("mysql:dbname=escolainfantilbd;host=localhost","root","");
     } 
    catch(PDOException $e){
           $e->getMessage();
@@ -71,7 +71,7 @@ public function listarProfessor($usu){
 
  //funcao para todos os usuarios
   public function logar($email,$senha,$user){
-
+    $this->conectar();
     global $pdo;
     $sql =$pdo->prepare("SELECT id,Nome,usuario,permissao FROM tbformulario WHERE `E-mail` = :e AND Senha = :s AND usuario = :u");
     $sql->bindValue(":e",$email);
@@ -87,11 +87,9 @@ public function listarProfessor($usu){
         $_SESSION['usuario'] = $dado['usuario'];
         $_SESSION['permissao'] = $dado['permissao'];
        
-        return true;
+        return $dado;
     }
-    else{
-          return false;
-    }
+
 }
 //funcao para todos os usuarios
 public function novasenha($senha,$matricula,$user){
@@ -242,12 +240,12 @@ public function jaBloqueado($id,$funcao){
     $tt=$sql->fetch(PDO::FETCH_ASSOC);       
 if($tt['permissao']=='123'){
     ?>
-       <a href="?funcao=<?php echo$funcao?>&onlock=<?php echo$id?>"><img src="../minha-coleçao/block-user.png"></a>
+       <a href="?funcao=<?php echo$funcao?>&onlock=<?php echo$id?>"><img src="../../minha-coleçao/block-user.png"></a>
     <?php
    return true;
 }else{
   ?>
-  <a href="?funcao=<?php echo$funcao?>&block=<?php echo$id;?>"><img src="../minha-coleçao/user.png"></a>
+  <a href="?funcao=<?php echo$funcao?>&block=<?php echo$id;?>"><img src="../../minha-coleçao/user.png"></a>
   <?php
     return false;
 }

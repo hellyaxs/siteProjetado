@@ -10,18 +10,17 @@
                    <p>4 h 30 min</p>
                    <p>R$ 160</p>
 
-               <a href="../sub-paginas/agende-online.php"><button>Agendar ja</button></a>
+               <a href="?controller=pages&active=agendeOnline"><button>Agendar ja</button></a>
          </div>
     
          <div>
             
-        
                 <img src="banco-de-imagem/imagens da escola/03.jpg" alt="alunos-da-escola-reino-infantil" id="agende-ja">
                 <h2>Ensino Fundamental</h2><br>
             <p>Seg, Ter, Qua, Qui, Sex</p>
             <p>4 h 30 min</p>
             <p>R$ 160</p>
-            <a href="../sub-paginas/agende-online.php"><button>Agendar ja</button></a>
+            <a href="?controller=pages&active=agendeOnline"><button>Agendar ja</button></a>
         </div>
      </div>
 </section>
@@ -36,16 +35,12 @@
             <p><a href="tel:+55 (81)992963417" style="color:blue">(81) 99296-3417</a></p>
 
             <ul class="social">
-                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="../social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
-                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="../social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
-                <li><a href="#" target="_blank" ><img src="../social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
-                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="../social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao" ></a></li>
+                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
+                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
+                <li><a href="#" target="_blank" ><img src="social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
+                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao" ></a></li>
             </ul>
     </div>
 
 </section>
 <script src="js/fomulario.js"></script>
-
-<?php
-include_once "componets/footer.php";
-?>

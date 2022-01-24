@@ -1,14 +1,8 @@
 <?php
-include_once "componets/head.php";
-include "controller/pages.php";
+include_once ("config.php");
+require "core/core.php";
 
-if ($_GET['controller']!=null && $_GET['active']!=null) 
-{
-    $controll =$_GET['controller'];
-    $getpage =$_GET['active'];
-}
+$start = new core();
 
-$pages = new $controll;
-$pages->$getpage();
 ?>
      

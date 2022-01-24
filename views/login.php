@@ -1,11 +1,5 @@
-<?php
-
-require_once 'CLASSES/classes.php';
-$u =new usuario;
-?>
-<link rel="stylesheet" type="text/css" href="css/login-folha.css">
-    <section>
-            <form method="POST">
+ <section>
+            <form method="POST" action="sistema">
             
                 <div><img src="banco-de-imagem/favicon_io/android-chrome-192x192.png" alt="logo-do-site"></div>
     
@@ -36,59 +30,17 @@ $u =new usuario;
             <p><a href="tel:+55 (81)992963417" style="color:blue">(81) 99296-3417</a></p>
 
             <ul class="social">
-                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="../social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
-                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="../social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
-                <li><a href="#" target="_blank"><img src="../social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
-                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="../social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao"></a></li>
+                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
+                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
+                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao"></a></li>
             </ul>
     </div>
 </section>
 
-<footer>
-  Copyright  &copy;2021  desenvolvedor || Elias Vitor
-   </footer>
  <?php  
 if(isset($_POST['E-mail'])){
-
-$email = addslashes($_POST['E-mail']);
-$senha = addslashes($_POST['Senha']);
-$user = addslashes($_POST['usuario']);
-
-if(!empty($email) && !empty($senha)){
-
-    $u->conectar();
-
-   if($u->logar($email,$senha,$user)){
     
-    if($user == 'gestao'){
-
-        header("location: area-privada-gestao.php?funcao=1");
-
-    }else if($user =='professor'){
-
-
-        header("location: area-privada-professor.php?funcao=1");
-    }
-    else{
-        header("location: area-privada.php?bimestre=1");
-    }
-   }
-   else{
-       ?>
-<script>
-     alert('E-mail ou senha invalidos tente novamente')
-</script>
-
-       <?php
-   
-   }
-}
-else{
-    ?>
-     <div id="msg-erro">prencha todos os campos!!!</div>
-    <?php
-
-    }
 }
 ?>
 

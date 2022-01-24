@@ -10,7 +10,7 @@
                 A escola reino infantil deu-se inicio em 2004 em uma pequena garagem com apenas tres mesinhas um mimiografo(emprestado) e um quadro de giz depois de anos de dedicação e compromisso com a educação fomos investindo para melhorar cada vez mais nossa estrutura e nosssa qualiadade de ensino.hoje estamos a 16 anos focados em aprimorar nossa esrutura para darmos a socieade o nosso melhor em educação.
 
             </p>
-            <button type="button"><a href="agende-online.html">Entre em contato</a></button> 
+            <button type="button"><a href="?controller=pages&active=AgendeOnline">Entre em contato</a></button> 
         
         </div>   
         <div>
@@ -31,10 +31,10 @@
             <p><a href="tel:+55 (81)992963417" style="color:blue">(81) 99296-3417</a></p>
 
             <ul class="social">
-                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="../social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
-                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="../social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
-                <li><a href="#" target="_blank"><img src="../social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
-                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="../social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao"></a></li>
+                <li><a href="https://www.facebook.com/gmailReinoInfantil15anos/photos/?ref=page_internal" target="_blank"><img src="social-media/minha-coleçao/png/001-facebook.png" alt="midia-social-facebook"></a></li>
+                <li><a href="https://www.instagram.com/jeane_892/" target="_blank"><img src="social-media/minha-coleçao/png/instagram.png" alt="midia-social-instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="social-media/minha-coleçao/png/002-whatsapp.png" alt="midia-social-whatsapp"></a></li>
+                <li><a href="https://goo.gl/maps/kid7Nx4TipNuRizR7" target="_blank"><img src="social-media/minha-coleçao/png/003-periscopio.png" alt="midia-social-localizaçao"></a></li>
             </ul>
     </div>
 </section>

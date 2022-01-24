@@ -1,6 +1,6 @@
 
 function enviar(){
-    acao.innerHTML=`<img src="../minha-coleçao/in.png"> jshdgfjshdgjfhsdgjfhsdsdf`
+    acao.innerHTML=`<img src="../minha-coleçao/in.png">`
 
 }
 var enviar=window.document.getElementById('enviarf')
