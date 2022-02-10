@@ -122,7 +122,7 @@
           }
           
           $l->conectar();
-          $dados= $l->listaralunos($bimestre);
+
           if($bimestre=='plano'){
  
             echo"<h1>insira o planejamento da sua turma </h1>";
@@ -141,10 +141,11 @@
 
                <?php 
                 
-                if($l->planejamentoExiste($i.'_infa')){
+                if($l->planejamentoExiste('infantil_'.$i)){
                   ?>
                   <h3> enviado <br></h3>
                   <a href="area-privada-professor.php?funcao=<?php echo "1".$i;?>" id="prof">excluir</a>
+                    <a href="../planejamento/<?php echo$notas['planoPDF']?>" type="application/pdf" target="_blank" style="color: green;">abrir</a>
                   <?php
                 }else{
                   ?>
@@ -152,7 +153,7 @@
                   <?php
                 }
                  if(isset($_GET['funcao'][1])&& $_GET['funcao'][1]==$i){
-                     $l->excluirPanejamento($i.'_infa');
+                     $l->excluirPanejamento('infantil_'.$i);
                      echo "<meta HTTP-EQUIV='refresh' CONTENT='0;URL=area-privada-professor.php?funcao=1'>";
                  }
           ?>
@@ -200,6 +201,7 @@
             <?php
             
           }else{
+               $dados= $l->listaralunos($bimestre);
           ?>
           <h1> Alunos</h1>
  

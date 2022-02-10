@@ -121,7 +121,7 @@ public function listaralunos($ano){
 
   global $pdo;
   $alunos=array();
-  $sql=$pdo->prepare("SELECT nome,id,idAluno FROM {$ano} ORDER BY Nome");
+  $sql=$pdo->prepare("SELECT nome,id,idAluno FROM {$ano} ORDER BY nome");
   $sql->execute();
   $alunos= $sql->fetchAll(PDO::FETCH_ASSOC);
  
