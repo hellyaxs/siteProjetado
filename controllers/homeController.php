@@ -2,7 +2,7 @@
 
 class homeController extends mainController {
 
-  public  function index(){
+  public function index(){
 
       $data = array(
           "css" => "home",

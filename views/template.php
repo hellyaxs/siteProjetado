@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="../banco-de-imagem/favicon_io/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital@1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?="css/".$data["css"].".css"?>">
+    <link rel="stylesheet" href="<?="assets/css/".$data["css"].".css"?>">
     <title>Escola Reino Infantil</title>
 </head>
 <body>
@@ -27,7 +27,13 @@
 </section>
 
  <?php
- $this->runViewInTemplate($nameView,$data);
+ //$test = new Gestao();
+//$res = $test->deleteAluno(1);
+//echo $res;
+ $t = new Professor();
+ $dado = $t->Logar("eliasVitor@gmail.com","12345678");
+ print_r($dado);
+// $this->runViewInTemplate($nameView,$data);
  ?>
 
 <footer>

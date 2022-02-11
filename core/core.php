@@ -44,6 +44,8 @@ class core
                 require "models/" . $nameArquivo . ".php";
             } elseif (file_exists("core/" . $nameArquivo . ".php")) {
                 require "core/" . $nameArquivo . ".php";
+            } elseif(file_exists("models/DAO/".$nameArquivo.".php")){
+                require "models/DAO/".$nameArquivo.".php";
             }
         });
     }

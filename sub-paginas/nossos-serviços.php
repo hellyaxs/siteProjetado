@@ -1,7 +1,7 @@
 <?php
 include_once "../componets/head.php";
 ?>
-<link rel="stylesheet" href="../css/nosso-serviço-folha.css">
+<link rel="stylesheet" href="../assets/css/nosso-serviço-folha.css">
 <section >
      <div class="servi">
          <div>  
@@ -47,7 +47,7 @@ include_once "../componets/head.php";
     </div>
 
 </section>
-<script src="../js/fomulario.js"></script>
+<script src="../assets/js/fomulario.js"></script>
 
 <?php
 include_once "../componets/footer.php";

@@ -2,19 +2,18 @@
 
 class conexao
 {
-  private static $acessoAoBD;
+    public static $acessoAoBD;
 
   public static function getConexao(){
 
-      if (isset(self::$acessoAoBD)){
+      if (!isset(self::$acessoAoBD)){
           try {
-              self::$acessoAoBD = new PDO("mysql:dbname=escolainfantilbd;host=localhost","root","");
+              self::$acessoAoBD = new PDO("mysql:dbname=escolareinoinfantil;host=localhost","root","");
 
           }catch (PDOException $erro){
               echo $erro;
           }
       }
-
   }
 
 }

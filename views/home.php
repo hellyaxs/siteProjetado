@@ -1,3 +1,4 @@
+
 <picture>
     <source media="(max-width: 700px )" srcset="banco-de-imagem/foto-principal-P.jpg" type="image/jpg">
     <source media="(max-width: 1000px )" srcset="banco-de-imagem/foto-principal-M.jpg" type="image/jpg">

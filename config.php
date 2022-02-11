@@ -5,7 +5,7 @@ global $config;
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_PASS", "");
-define("DB_NAME", "jornal");
+define("DB_NAME", "escolainfantil");
 
 // BASE_URL (links dinâmicos)
 define("URLROOT", "http://escolareinoInfantil.com/");

@@ -8,7 +8,7 @@ $u = new usuario;
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../banco-de-imagem/favicon_io/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital@1&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>

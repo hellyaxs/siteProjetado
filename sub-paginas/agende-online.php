@@ -2,7 +2,7 @@
     <?php
     include_once "../componets/head.php";
     ?>
- <link rel="stylesheet" type="text/css" href="../css/Agende-folha.css">
+ <link rel="stylesheet" type="text/css" href="../assets/css/Agende-folha.css">
 <section>
     
     <form action="marcarHorario.php" method="POST">

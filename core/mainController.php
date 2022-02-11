@@ -6,6 +6,8 @@ class mainController
     public function __construct()
     {
         $this->pages = array("home","sobre","agende","Portifolio","login","servicos");
+        $login = new Logar();
+        $login->verificaLogin();
     }
       public function getPages(){
         return $this->pages;
