@@ -1,12 +1,12 @@
  <section>
-            <form method="POST" action="sistema">
+            <form method="POST" action="login/logar">
             
                 <div><img src="banco-de-imagem/favicon_io/android-chrome-192x192.png" alt="logo-do-site"></div>
     
                 <aside>
                         <h1>Meu boletin</h1>               
-                        <input type="email" name="E-mail" id="E-mail" placeholder="Digite seu E-mail" required maxlength="80"> <br>
-                        <input type="password" name="Senha" id="Senha" placeholder="Digite sa senha" required maxlength="15"> <br>
+                        <input type="email" name="email" id="E-mail" placeholder="Digite seu E-mail" required maxlength="80"> <br>
+                        <input type="password" name="senha" id="Senha" placeholder="Digite sa senha" required maxlength="15"> <br>
                         <select name="usuario" id="usuario" required>
                         <option disabled selected>user</option>
                         <option value="aluno">aluno</option>

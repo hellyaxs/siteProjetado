@@ -2,37 +2,45 @@
 
 class Aluno extends Pessoa
 {
-    private $dados = array(
-        "reponsvel",
-        "turma",
+    private $alunoDao;
+
+    private $dadosAluno = array(
         "materias" => array(
-            "portugues" => array(),
-            "matematica"=> array(),
-            "artes" => array()
+            "portugues" => array(1.2, 3.4, 4.5, 1.3),
         ),
-        "materialEscolar" =>array(),
-        "frequencia",
+
     );
 
-    public function __construct()
+    public function __construct($idAluno, $name)
     {
-        conexao::getConexao();
+        $this->alunoDao = new AlunoDao();
+        $this->dados["name"] = $name;
+        $this->preenchendoDados($idAluno);
     }
 
-
-    public function Logar($email, $senha)
+    public function getdados()
     {
-        // TODO: Implement Logar() method.
+        return $this->dadosAluno;
     }
 
     public function __set($name, $value)
     {
-        // TODO: Implement __set() method.
+        $this->dadosAluno[$name] = $value;
     }
 
+    private function preenchendoDados($id){
+       $novoAluno = $this->consutaBD($id);
+       foreach ($novoAluno as $key => $value){
+           $this->__set($key,$value);
+       }
 
-    public function logOff()
+    }
+
+    private function consutaBD($id)
     {
-        // TODO: Implement logOff() method.
+        return $this->alunoDao->get($id);
     }
+
+
+
 }

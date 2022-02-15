@@ -10,22 +10,7 @@ class Gestao extends Pessoa
         $this->aluno = new AlunoDao();
     }
 
-    public function __set($name, $value)
-    {
-        // TODO: Implement __set() method.
-    }
-
-    public function Logar($email, $senha)
-    {
-        // TODO: Implement Logar() method.
-    }
-
-    public function getDataBD()
-    {
-        // TODO: Implement getDataBD() method.
-    }
     public function createAluno($name,$urlfoto,$dataNascimento,$turma,$email){
-
 
        $res = $this->aluno->create($name,$urlfoto,$dataNascimento,$turma,$email);
        return $res;
@@ -35,5 +20,10 @@ class Gestao extends Pessoa
 
        $res = $this->aluno->delete($id);
        return $res;
+    }
+
+    public function logOff()
+    {
+        // TODO: Implement logOff() method.
     }
 }

@@ -29,9 +29,9 @@ class AlunoDao
 
     public function get($id)
     {
-     $dados = $this->con->query("SELECT * FROM dicentes WHERE id ={$id}");
-     $dados->fetch(PDO::FETCH_ASSOC);
-     return $dados;
+     $dados = $this->con->query("SELECT * FROM dicentes WHERE idDicentes = {$id}");
+     $res = $dados->fetch(PDO::FETCH_ASSOC);
+     return $res;
     }
 
     public function put($id)
