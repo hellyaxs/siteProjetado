@@ -2,12 +2,8 @@
 
 class mainController
 {
-    private $pages;
-    public function __construct()
-    {
-        $this->pages = array("home","sobre","agende","Portifolio","login","servicos");
+    private $pages = array("home","sobre","agende","Portifolio","login","servicos");
 
-    }
       public function getPages(){
         return $this->pages;
     }

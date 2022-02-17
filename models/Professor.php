@@ -2,18 +2,12 @@
 
 class Professor extends Pessoa
 {
+    private $turma;
 
-    private $dados= array(
-        "turma",
+    private $tados = array(
+
         "alunos" => array()
     );
 
 
-
-    public function logOff()
-    {
-       if(!isset($_SESSION["id"])){
-           session_destroy();
-       }
-    }
 }

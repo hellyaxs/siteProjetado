@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="<?="assets/css/".$data["css"].".css"?>">
+
     <title>Escola Reino Infantil</title>
 </head>
 <body>
@@ -38,5 +39,7 @@
 <footer>
     Copyright   &copy;2021  desenvolvedor || Elias Vitor <a  href="#menu">volta ao topo</a>
 </footer>
+
+<script src="assets/js/theme.js"></script>
 </body>
 </html>

@@ -5,11 +5,18 @@ class sistemaController extends mainController
 {
 
     public function index(){
+
         session_start();
         $profile = $_SESSION["funcao"]."Start";
         $dado = array("css"=>"home");
+        //$dataUsuario = $this->$profile($_SESSION["id"],$_SESSION["name"],$dado);
 
-       $dataUsuario = $this->$profile($_SESSION["id"],$_SESSION["name"],$dado);
+        if($_SESSION["funcao"] =="dicente"){
+            header("location: ./sistemaAluno ");
+        }
+        else{
+            header("location: ./sistemaProfessorController ");
+        }
 
 
     }

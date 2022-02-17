@@ -3,19 +3,14 @@
 class Aluno extends Pessoa
 {
     private $alunoDao;
-
-    private $dadosAluno = array(
-        "materias" => array(
-            "portugues" => array(1.2, 3.4, 4.5, 1.3),
-        ),
-
-    );
+    const materias = array("portugues");
+    private $dadosAluno = array();
 
     public function __construct($idAluno, $name)
     {
         $this->alunoDao = new AlunoDao();
-        $this->dados["name"] = $name;
         $this->preenchendoDados($idAluno);
+
     }
 
     public function getdados()
@@ -29,9 +24,14 @@ class Aluno extends Pessoa
     }
 
     private function preenchendoDados($id){
-       $novoAluno = $this->consutaBD($id);
-       foreach ($novoAluno as $key => $value){
+
+
+       foreach ($this->consutaBD($id) as $key => $value){
            $this->__set($key,$value);
+       }
+
+       foreach (self::materias as $materia){
+         $this->__set($materia,new Materia($id,$materia));
        }
 
     }

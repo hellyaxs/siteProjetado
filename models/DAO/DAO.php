@@ -1,9 +1,12 @@
 <?php
 
-interface DAO
+class DAO
 {
-    public function create();
- public function delete($id,$tets);
- public function get();
- public function put();
+  protected $conexao;
+
+  public function __construct()
+  {
+      conexao::getConexao();
+    $this->conexao = conexao::$acessoAoBD;
+  }
 }
