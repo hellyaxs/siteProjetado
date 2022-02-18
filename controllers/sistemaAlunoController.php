@@ -4,6 +4,7 @@
 class sistemaAlunoController extends mainController
 {
     private $aluno;
+    private $data;
 
     public function __construct()
     {
@@ -17,7 +18,7 @@ class sistemaAlunoController extends mainController
         //foreach ($this->aluno->getdados() as $item => $value){
         //echo "<pre>".var_dump($item)."=>".var_dump($value)."</pre>";
         //}
-        $this->runTemplate('sistemadicente',$data,$this->aluno->getdados());
+        $this->runTemplate('sistemadicente',$this->data,$this->aluno->getdados());
     }
 
 
